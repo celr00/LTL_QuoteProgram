@@ -24,18 +24,19 @@ a {
 h1, h2, h3, h4 {
     font-family: var(--fuenteHeading);
     line-height: 1.2;
+    margin: 0;
 }
 h1 {
-    font-size: 4.8rem;
+    font-size: 2.8rem;
 }
 h2 {
-    font-size: 4rem;
+    font-size: 2.4rem;
 }
 h3 {
-    font-size: 3.2rem;
+    font-size: 2rem;
 }
 h4 {
-    font-size: 2.8rem;
+    font-size: 1.6rem;
 }
 img {
     max-width: 100%;
@@ -48,6 +49,12 @@ img {
 }
 .centrar-texto {
     text-align: center;
+}
+.container {
+    /*border: 1px solid var(--negro);*/
+    margin: auto;
+    width: 95%;
+    max-width: 120rem;
 }
 
 /** Header **/
@@ -92,5 +99,39 @@ img {
     .navigation__elem {
         height: 100%;
         padding-top: 2rem;
+    }
+}
+
+/** Titles **/
+.title {
+    margin:1rem;
+}
+
+
+/** Quotes - Shipper and Consignee **/
+
+.route-information{
+    display: flex;
+    flex-direction: column;
+}
+.location {
+    background-color: var(--gris);
+    padding: 1rem;
+}
+@media (min-width: 480px) {
+    .location{
+        width: min(90%, 64rem);
+    }
+    .route-information {
+        align-items: center;
+    }
+}
+@media (min-width: 768px) {
+    .location {
+        width: 50%;
+    }
+    .route-information{
+        flex-direction: row;
+        gap: 2rem;
     }
 }
