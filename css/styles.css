@@ -12,6 +12,9 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+body {
+    margin: 0;
+}
 
 /** Globales **/
 
@@ -51,6 +54,43 @@ img {
 
 .header {
     background-color: var(--gris);
-    display: flex;
     justify-content: space-between;
+    padding-top: 2rem;
+    margin: 0;
+}
+@media (min-width: 768px) {
+    .header__logo {
+        width: 12rem;
+        padding: 1rem;
+    }
+    .header {
+        padding: 0;
+        display: flex;
+    }
+}
+.navigation {
+    display: flex;
+    flex-direction: column;
+}
+.navigation__elem {
+    color: var(--blanco);
+    font-size: 2rem;
+    width: 100%;
+}
+.navigation__elem:hover {
+    background-color: var(--azulMint);
+    color: var(--negro);
+    font-size: 2rem;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .navigation {
+        flex-direction: row;
+        align-items: center;
+        min-width: max(64rem, 50%);
+    }
+    .navigation__elem {
+        height: 100%;
+        padding-top: 2rem;
+    }
 }
