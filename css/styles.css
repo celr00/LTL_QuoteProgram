@@ -147,22 +147,17 @@ img {
     padding: 1rem;
     justify-content: center;
     align-items: center;
-    order: 2;
 }
 .location__display-element--obligatorio{
     background-color: var(--azulMint);
     padding-bottom: 1rem;
-}
-.location__display-element--last {
-    order: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 .location__input{
     padding-top: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
-}
-.location__input--obligatorio{
-    
 }
 .location__label{
     display: block;
@@ -172,8 +167,13 @@ img {
     width: 100%;
 }
 @media (min-width: 480px) {
-    .location__grid{
+    .location__display {
         display: grid;
+        grid-area: "ai ad"
+                   "ac ac";
         grid-template-columns: repeat(2, 1fr);
+    }
+    .location__display-element--last {
+        grid-column: 1/3;
     }
 }
