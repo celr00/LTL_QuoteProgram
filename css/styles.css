@@ -25,6 +25,7 @@ h1, h2, h3, h4 {
     font-family: var(--fuenteHeading);
     line-height: 1.2;
     margin: 0;
+    margin-bottom: 1rem;
 }
 h1 {
     font-size: 2.8rem;
@@ -118,6 +119,7 @@ img {
     background-color: var(--gris);
     padding: 1rem;
     margin-bottom: 2rem;
+    border: none;
 }
 @media (min-width: 480px) {
     .location{
@@ -134,5 +136,44 @@ img {
     .route-information{
         flex-direction: row;
         gap: 2rem;
+    }
+}
+
+.location__display{
+    display: flex;
+    flex-direction: column;
+}
+.location__dispay-element{
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+}
+.location__display-element--obligatorio{
+    background-color: var(--azulMint);
+    padding-bottom: 1rem;
+}
+.location__display-element--last {
+    order: 1;
+}
+.location__input{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.location__input--obligatorio{
+    
+}
+.location__label{
+    display: block;
+}
+.location__campo{
+    display: block;
+    width: 100%;
+}
+@media (min-width: 480px) {
+    .location__grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
