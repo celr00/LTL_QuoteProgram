@@ -32,7 +32,7 @@
                     <div class ="location__display-element location__display-element--obligatorio">
                         <div class="location__input location__input--obligatorio">
                             <label class="location__label">Country</label>
-                            <select class="location__campo">
+                            <select title="Country" class="location__campo">
                                 <option disabled selected>Select</option>
                                 <option>USA</option>
                                 <option>MEX</option>
@@ -41,35 +41,35 @@
                         </div>
                         <div class="location__input location__input--obligatorio">
                             <label class="location__label">Zip</label>
-                            <input type="number" class="location__campo">
+                            <input title="Zip" type="number" class="location__campo">
                         </div>
                         <div class="location__input location__input--obligatorio">
                             <label class="location__label">City</label>
-                            <input type="text" class="location__campo">
+                            <input title="City" type="text" class="location__campo">
                         </div>
                         <div class="location__input location__input--obligatorio">
                             <label class="location__label">State</label>
-                            <input type="text" class="location__campo">
+                            <input title="State" type="text" class="location__campo">
                         </div>
                     </div>
                     <div class ="location__display-element location__dispay-element--primero">
                         <div class="location__input">
                             <label class="location__label">Company Name</label>
-                            <input type="text" class="location__campo">
+                            <input title="Company Name" type="text" class="location__campo">
                         </div>
                         <div class="location__input">
                             <label class="location__label">Care Of</label>
-                            <input type="text" class="location__campo">
+                            <input title="Care of" type="text" class="location__campo">
                         </div>
                     </div>
                     <div class ="location__display-element location__display-element--last">
                         <div class="location__input">
                             <label class="location__label">Street Address</label>
-                            <input type="text" class="location__campo">
+                            <input title="Address"type="text" class="location__campo">
                         </div>
                         <div class="location__input">
                             <label class="location__label">Street Address 2</label>
-                            <input type="text" class="location__campo">
+                            <input title="Address2"type="text" class="location__campo">
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                     <div class ="location__display-element location__display-element--obligatorio">
                         <div class="location__input location__input--obligatorio">
                             <label class="location__label">Country</label>
-                            <select class="location__campo">
+                            <select title="Country" class="location__campo">
                                 <option disabled selected>Select</option>
                                 <option>USA</option>
                                 <option>MEX</option>
@@ -89,35 +89,35 @@
                         </div>
                         <div class="location__input location__input--obligatorio">
                             <label class="location__label">Zip</label>
-                            <input type="number" class="location__campo">
+                            <input title="Zip" type="number" class="location__campo">
                         </div>
                         <div class="location__input location__input--obligatorio">
                             <label class="location__label">City</label>
-                            <input type="text" class="location__campo">
+                            <input title="City" type="text" class="location__campo">
                         </div>
                         <div class="location__input location__input--obligatorio">
                             <label class="location__label">State</label>
-                            <input type="text" class="location__campo">
+                            <input title="State" type="text" class="location__campo">
                         </div>
                     </div>
                     <div class ="location__display-element location__dispay-element--primero">
                         <div class="location__input">
                             <label class="location__label">Company Name</label>
-                            <input type="text" class="location__campo">
+                            <input title="Company Name" type="text" class="location__campo">
                         </div>
                         <div class="location__input">
                             <label class="location__label">Care Of</label>
-                            <input type="text" class="location__campo">
+                            <input title="Care of" type="text" class="location__campo">
                         </div>
                     </div>
                     <div class ="location__display-element location__display-element--last">
                         <div class="location__input">
                             <label class="location__label">Street Address</label>
-                            <input type="text" class="location__campo">
+                            <input title="Address"type="text" class="location__campo">
                         </div>
                         <div class="location__input">
                             <label class="location__label">Street Address 2</label>
-                            <input type="text" class="location__campo">
+                            <input title="Address2"type="text" class="location__campo">
                         </div>
                     </div>
                 </div>
@@ -126,18 +126,19 @@
 
         <h1 class="title">Package Information</h1>
         <section class="container packages">
+            <h5 class="no-margin packages__order">Commodity 1</h5>
             <fieldset class="packages__fieldset">
-                <select class="packages__input">
-                    <option disabled selected>Select</option>
+                <select title="Handling Type" class="packages__input hangling-type">
+                    <option disabled selected>Handling Type</option>
                     <option>Pallet</option>
                     <option>Skid</option>
                     <option>Box</option>
                     <option>Carton</option>
                     <option>Barrel</option>
                 </select>
-                <input type="number" class="packages__input">
-                <select class="packages__input">
-                    <option disabled selected>Select</option>
+                <input placeholder="Num of Units" title="Pieces" type="number" class="packages__input number-packages">
+                <select title="Class" class="packages__input nmfc-class">
+                    <option disabled selected>Class</option>
                     <option>50</option>
                     <option>55</option>
                     <option>60</option>
@@ -157,10 +158,528 @@
                     <option>400</option>
                     <option>500</option>
                 </select>
-                <input type="text" class="packages__input">
-                <input type="number" class="packages__input">
-                <input type="number" class="packages__input">
-                <input type="number" class="packages__input">
+                <input placeholder="Description" title="Description" type="text" class="packages__input description">
+                <input placeholder="Lenght" title="Lenght" type="number" class="packages__input dim">
+                <input placeholder="Width" title="Width" type="number" class="packages__input dim">
+                <input placeholder="Height" title="Height" type="number" class="packages__input dim">
+            </fieldset>
+            <h5 class="no-margin packages__order">Commodity 2</h5>
+            <fieldset class="packages__fieldset">
+                <select title="Handling Type" class="packages__input hangling-type">
+                    <option disabled selected>Handling Type</option>
+                    <option>Pallet</option>
+                    <option>Skid</option>
+                    <option>Box</option>
+                    <option>Carton</option>
+                    <option>Barrel</option>
+                </select>
+                <input placeholder="Num of Units" title="Pieces" type="number" class="packages__input number-packages">
+                <select title="Class" class="packages__input nmfc-class">
+                    <option disabled selected>Class</option>
+                    <option>50</option>
+                    <option>55</option>
+                    <option>60</option>
+                    <option>65</option>
+                    <option>70</option>
+                    <option>77.5</option>
+                    <option>85</option>
+                    <option>92.5</option>
+                    <option>100</option>
+                    <option>110</option>
+                    <option>125</option>
+                    <option>150</option>
+                    <option>175</option>
+                    <option>200</option>
+                    <option>250</option>
+                    <option>300</option>
+                    <option>400</option>
+                    <option>500</option>
+                </select>
+                <input placeholder="Description" title="Description" type="text" class="packages__input description">
+                <input placeholder="Lenght" title="Lenght" type="number" class="packages__input dim">
+                <input placeholder="Width" title="Width" type="number" class="packages__input dim">
+                <input placeholder="Height" title="Height" type="number" class="packages__input dim">
+            </fieldset>
+            <h5 class="no-margin packages__order">Commodity 3</h5>
+            <fieldset class="packages__fieldset">
+                <select title="Handling Type" class="packages__input hangling-type">
+                    <option disabled selected>Handling Type</option>
+                    <option>Pallet</option>
+                    <option>Skid</option>
+                    <option>Box</option>
+                    <option>Carton</option>
+                    <option>Barrel</option>
+                </select>
+                <input placeholder="Num of Units" title="Pieces" type="number" class="packages__input number-packages">
+                <select title="Class" class="packages__input nmfc-class">
+                    <option disabled selected>Class</option>
+                    <option>50</option>
+                    <option>55</option>
+                    <option>60</option>
+                    <option>65</option>
+                    <option>70</option>
+                    <option>77.5</option>
+                    <option>85</option>
+                    <option>92.5</option>
+                    <option>100</option>
+                    <option>110</option>
+                    <option>125</option>
+                    <option>150</option>
+                    <option>175</option>
+                    <option>200</option>
+                    <option>250</option>
+                    <option>300</option>
+                    <option>400</option>
+                    <option>500</option>
+                </select>
+                <input placeholder="Description" title="Description" type="text" class="packages__input description">
+                <input placeholder="Lenght" title="Lenght" type="number" class="packages__input dim">
+                <input placeholder="Width" title="Width" type="number" class="packages__input dim">
+                <input placeholder="Height" title="Height" type="number" class="packages__input dim">
+            </fieldset>
+            <h5 class="no-margin packages__order">Commodity 4</h5>
+            <fieldset class="packages__fieldset">
+                <select title="Handling Type" class="packages__input hangling-type">
+                    <option disabled selected>Handling Type</option>
+                    <option>Pallet</option>
+                    <option>Skid</option>
+                    <option>Box</option>
+                    <option>Carton</option>
+                    <option>Barrel</option>
+                </select>
+                <input placeholder="Num of Units" title="Pieces" type="number" class="packages__input number-packages">
+                <select title="Class" class="packages__input nmfc-class">
+                    <option disabled selected>Class</option>
+                    <option>50</option>
+                    <option>55</option>
+                    <option>60</option>
+                    <option>65</option>
+                    <option>70</option>
+                    <option>77.5</option>
+                    <option>85</option>
+                    <option>92.5</option>
+                    <option>100</option>
+                    <option>110</option>
+                    <option>125</option>
+                    <option>150</option>
+                    <option>175</option>
+                    <option>200</option>
+                    <option>250</option>
+                    <option>300</option>
+                    <option>400</option>
+                    <option>500</option>
+                </select>
+                <input placeholder="Description" title="Description" type="text" class="packages__input description">
+                <input placeholder="Lenght" title="Lenght" type="number" class="packages__input dim">
+                <input placeholder="Width" title="Width" type="number" class="packages__input dim">
+                <input placeholder="Height" title="Height" type="number" class="packages__input dim">
+            </fieldset>
+            <h5 class="no-margin packages__order">Commodity 5</h5>
+            <fieldset class="packages__fieldset">
+                <select title="Handling Type" class="packages__input hangling-type">
+                    <option disabled selected>Handling Type</option>
+                    <option>Pallet</option>
+                    <option>Skid</option>
+                    <option>Box</option>
+                    <option>Carton</option>
+                    <option>Barrel</option>
+                </select>
+                <input placeholder="Num of Units" title="Pieces" type="number" class="packages__input number-packages">
+                <select title="Class" class="packages__input nmfc-class">
+                    <option disabled selected>Class</option>
+                    <option>50</option>
+                    <option>55</option>
+                    <option>60</option>
+                    <option>65</option>
+                    <option>70</option>
+                    <option>77.5</option>
+                    <option>85</option>
+                    <option>92.5</option>
+                    <option>100</option>
+                    <option>110</option>
+                    <option>125</option>
+                    <option>150</option>
+                    <option>175</option>
+                    <option>200</option>
+                    <option>250</option>
+                    <option>300</option>
+                    <option>400</option>
+                    <option>500</option>
+                </select>
+                <input placeholder="Description" title="Description" type="text" class="packages__input description">
+                <input placeholder="Lenght" title="Lenght" type="number" class="packages__input dim">
+                <input placeholder="Width" title="Width" type="number" class="packages__input dim">
+                <input placeholder="Height" title="Height" type="number" class="packages__input dim">
+            </fieldset>
+            <h5 class="no-margin packages__order">Commodity 6</h5>
+            <fieldset class="packages__fieldset">
+                <select title="Handling Type" class="packages__input hangling-type">
+                    <option disabled selected>Handling Type</option>
+                    <option>Pallet</option>
+                    <option>Skid</option>
+                    <option>Box</option>
+                    <option>Carton</option>
+                    <option>Barrel</option>
+                </select>
+                <input placeholder="Num of Units" title="Pieces" type="number" class="packages__input number-packages">
+                <select title="Class" class="packages__input nmfc-class">
+                    <option disabled selected>Class</option>
+                    <option>50</option>
+                    <option>55</option>
+                    <option>60</option>
+                    <option>65</option>
+                    <option>70</option>
+                    <option>77.5</option>
+                    <option>85</option>
+                    <option>92.5</option>
+                    <option>100</option>
+                    <option>110</option>
+                    <option>125</option>
+                    <option>150</option>
+                    <option>175</option>
+                    <option>200</option>
+                    <option>250</option>
+                    <option>300</option>
+                    <option>400</option>
+                    <option>500</option>
+                </select>
+                <input placeholder="Description" title="Description" type="text" class="packages__input description">
+                <input placeholder="Lenght" title="Lenght" type="number" class="packages__input dim">
+                <input placeholder="Width" title="Width" type="number" class="packages__input dim">
+                <input placeholder="Height" title="Height" type="number" class="packages__input dim">
+            </fieldset>
+            <h5 class="no-margin packages__order">Commodity 7</h5>
+            <fieldset class="packages__fieldset">
+                <select title="Handling Type" class="packages__input hangling-type">
+                    <option disabled selected>Handling Type</option>
+                    <option>Pallet</option>
+                    <option>Skid</option>
+                    <option>Box</option>
+                    <option>Carton</option>
+                    <option>Barrel</option>
+                </select>
+                <input placeholder="Num of Units" title="Pieces" type="number" class="packages__input number-packages">
+                <select title="Class" class="packages__input nmfc-class">
+                    <option disabled selected>Class</option>
+                    <option>50</option>
+                    <option>55</option>
+                    <option>60</option>
+                    <option>65</option>
+                    <option>70</option>
+                    <option>77.5</option>
+                    <option>85</option>
+                    <option>92.5</option>
+                    <option>100</option>
+                    <option>110</option>
+                    <option>125</option>
+                    <option>150</option>
+                    <option>175</option>
+                    <option>200</option>
+                    <option>250</option>
+                    <option>300</option>
+                    <option>400</option>
+                    <option>500</option>
+                </select>
+                <input placeholder="Description" title="Description" type="text" class="packages__input description">
+                <input placeholder="Lenght" title="Lenght" type="number" class="packages__input dim">
+                <input placeholder="Width" title="Width" type="number" class="packages__input dim">
+                <input placeholder="Height" title="Height" type="number" class="packages__input dim">
+            </fieldset>
+            <h5 class="no-margin packages__order">Commodity 8</h5>
+            <fieldset class="packages__fieldset">
+                <select title="Handling Type" class="packages__input hangling-type">
+                    <option disabled selected>Handling Type</option>
+                    <option>Pallet</option>
+                    <option>Skid</option>
+                    <option>Box</option>
+                    <option>Carton</option>
+                    <option>Barrel</option>
+                </select>
+                <input placeholder="Num of Units" title="Pieces" type="number" class="packages__input number-packages">
+                <select title="Class" class="packages__input nmfc-class">
+                    <option disabled selected>Class</option>
+                    <option>50</option>
+                    <option>55</option>
+                    <option>60</option>
+                    <option>65</option>
+                    <option>70</option>
+                    <option>77.5</option>
+                    <option>85</option>
+                    <option>92.5</option>
+                    <option>100</option>
+                    <option>110</option>
+                    <option>125</option>
+                    <option>150</option>
+                    <option>175</option>
+                    <option>200</option>
+                    <option>250</option>
+                    <option>300</option>
+                    <option>400</option>
+                    <option>500</option>
+                </select>
+                <input placeholder="Description" title="Description" type="text" class="packages__input description">
+                <input placeholder="Lenght" title="Lenght" type="number" class="packages__input dim">
+                <input placeholder="Width" title="Width" type="number" class="packages__input dim">
+                <input placeholder="Height" title="Height" type="number" class="packages__input dim">
+            </fieldset>
+            <h5 class="no-margin packages__order">Commodity 9</h5>
+            <fieldset class="packages__fieldset">
+                <select title="Handling Type" class="packages__input hangling-type">
+                    <option disabled selected>Handling Type</option>
+                    <option>Pallet</option>
+                    <option>Skid</option>
+                    <option>Box</option>
+                    <option>Carton</option>
+                    <option>Barrel</option>
+                </select>
+                <input placeholder="Num of Units" title="Pieces" type="number" class="packages__input number-packages">
+                <select title="Class" class="packages__input nmfc-class">
+                    <option disabled selected>Class</option>
+                    <option>50</option>
+                    <option>55</option>
+                    <option>60</option>
+                    <option>65</option>
+                    <option>70</option>
+                    <option>77.5</option>
+                    <option>85</option>
+                    <option>92.5</option>
+                    <option>100</option>
+                    <option>110</option>
+                    <option>125</option>
+                    <option>150</option>
+                    <option>175</option>
+                    <option>200</option>
+                    <option>250</option>
+                    <option>300</option>
+                    <option>400</option>
+                    <option>500</option>
+                </select>
+                <input placeholder="Description" title="Description" type="text" class="packages__input description">
+                <input placeholder="Lenght" title="Lenght" type="number" class="packages__input dim">
+                <input placeholder="Width" title="Width" type="number" class="packages__input dim">
+                <input placeholder="Height" title="Height" type="number" class="packages__input dim">
+            </fieldset>
+            <h5 class="no-margin packages__order">Commodity 10</h5>
+            <fieldset class="packages__fieldset">
+                <select title="Handling Type" class="packages__input hangling-type">
+                    <option disabled selected>Handling Type</option>
+                    <option>Pallet</option>
+                    <option>Skid</option>
+                    <option>Box</option>
+                    <option>Carton</option>
+                    <option>Barrel</option>
+                </select>
+                <input placeholder="Num of Units" title="Pieces" type="number" class="packages__input number-packages">
+                <select title="Class" class="packages__input nmfc-class">
+                    <option disabled selected>Class</option>
+                    <option>50</option>
+                    <option>55</option>
+                    <option>60</option>
+                    <option>65</option>
+                    <option>70</option>
+                    <option>77.5</option>
+                    <option>85</option>
+                    <option>92.5</option>
+                    <option>100</option>
+                    <option>110</option>
+                    <option>125</option>
+                    <option>150</option>
+                    <option>175</option>
+                    <option>200</option>
+                    <option>250</option>
+                    <option>300</option>
+                    <option>400</option>
+                    <option>500</option>
+                </select>
+                <input placeholder="Description" title="Description" type="text" class="packages__input description">
+                <input placeholder="Lenght" title="Lenght" type="number" class="packages__input dim">
+                <input placeholder="Width" title="Width" type="number" class="packages__input dim">
+                <input placeholder="Height" title="Height" type="number" class="packages__input dim">
+            </fieldset>
+            <h5 class="no-margin packages__order">Commodity 11</h5>
+            <fieldset class="packages__fieldset">
+                <select title="Handling Type" class="packages__input hangling-type">
+                    <option disabled selected>Handling Type</option>
+                    <option>Pallet</option>
+                    <option>Skid</option>
+                    <option>Box</option>
+                    <option>Carton</option>
+                    <option>Barrel</option>
+                </select>
+                <input placeholder="Num of Units" title="Pieces" type="number" class="packages__input number-packages">
+                <select title="Class" class="packages__input nmfc-class">
+                    <option disabled selected>Class</option>
+                    <option>50</option>
+                    <option>55</option>
+                    <option>60</option>
+                    <option>65</option>
+                    <option>70</option>
+                    <option>77.5</option>
+                    <option>85</option>
+                    <option>92.5</option>
+                    <option>100</option>
+                    <option>110</option>
+                    <option>125</option>
+                    <option>150</option>
+                    <option>175</option>
+                    <option>200</option>
+                    <option>250</option>
+                    <option>300</option>
+                    <option>400</option>
+                    <option>500</option>
+                </select>
+                <input placeholder="Description" title="Description" type="text" class="packages__input description">
+                <input placeholder="Lenght" title="Lenght" type="number" class="packages__input dim">
+                <input placeholder="Width" title="Width" type="number" class="packages__input dim">
+                <input placeholder="Height" title="Height" type="number" class="packages__input dim">
+            </fieldset>
+            <h5 class="no-margin packages__order">Commodity 12</h5>
+            <fieldset class="packages__fieldset">
+                <select title="Handling Type" class="packages__input hangling-type">
+                    <option disabled selected>Handling Type</option>
+                    <option>Pallet</option>
+                    <option>Skid</option>
+                    <option>Box</option>
+                    <option>Carton</option>
+                    <option>Barrel</option>
+                </select>
+                <input placeholder="Num of Units" title="Pieces" type="number" class="packages__input number-packages">
+                <select title="Class" class="packages__input nmfc-class">
+                    <option disabled selected>Class</option>
+                    <option>50</option>
+                    <option>55</option>
+                    <option>60</option>
+                    <option>65</option>
+                    <option>70</option>
+                    <option>77.5</option>
+                    <option>85</option>
+                    <option>92.5</option>
+                    <option>100</option>
+                    <option>110</option>
+                    <option>125</option>
+                    <option>150</option>
+                    <option>175</option>
+                    <option>200</option>
+                    <option>250</option>
+                    <option>300</option>
+                    <option>400</option>
+                    <option>500</option>
+                </select>
+                <input placeholder="Description" title="Description" type="text" class="packages__input description">
+                <input placeholder="Lenght" title="Lenght" type="number" class="packages__input dim">
+                <input placeholder="Width" title="Width" type="number" class="packages__input dim">
+                <input placeholder="Height" title="Height" type="number" class="packages__input dim">
+            </fieldset>
+            <h5 class="no-margin packages__order">Commodity 13</h5>
+            <fieldset class="packages__fieldset">
+                <select title="Handling Type" class="packages__input hangling-type">
+                    <option disabled selected>Handling Type</option>
+                    <option>Pallet</option>
+                    <option>Skid</option>
+                    <option>Box</option>
+                    <option>Carton</option>
+                    <option>Barrel</option>
+                </select>
+                <input placeholder="Num of Units" title="Pieces" type="number" class="packages__input number-packages">
+                <select title="Class" class="packages__input nmfc-class">
+                    <option disabled selected>Class</option>
+                    <option>50</option>
+                    <option>55</option>
+                    <option>60</option>
+                    <option>65</option>
+                    <option>70</option>
+                    <option>77.5</option>
+                    <option>85</option>
+                    <option>92.5</option>
+                    <option>100</option>
+                    <option>110</option>
+                    <option>125</option>
+                    <option>150</option>
+                    <option>175</option>
+                    <option>200</option>
+                    <option>250</option>
+                    <option>300</option>
+                    <option>400</option>
+                    <option>500</option>
+                </select>
+                <input placeholder="Description" title="Description" type="text" class="packages__input description">
+                <input placeholder="Lenght" title="Lenght" type="number" class="packages__input dim">
+                <input placeholder="Width" title="Width" type="number" class="packages__input dim">
+                <input placeholder="Height" title="Height" type="number" class="packages__input dim">
+            </fieldset>
+            <h5 class="no-margin packages__order">Commodity 14</h5>
+            <fieldset class="packages__fieldset">
+                <select title="Handling Type" class="packages__input hangling-type">
+                    <option disabled selected>Handling Type</option>
+                    <option>Pallet</option>
+                    <option>Skid</option>
+                    <option>Box</option>
+                    <option>Carton</option>
+                    <option>Barrel</option>
+                </select>
+                <input placeholder="Num of Units" title="Pieces" type="number" class="packages__input number-packages">
+                <select title="Class" class="packages__input nmfc-class">
+                    <option disabled selected>Class</option>
+                    <option>50</option>
+                    <option>55</option>
+                    <option>60</option>
+                    <option>65</option>
+                    <option>70</option>
+                    <option>77.5</option>
+                    <option>85</option>
+                    <option>92.5</option>
+                    <option>100</option>
+                    <option>110</option>
+                    <option>125</option>
+                    <option>150</option>
+                    <option>175</option>
+                    <option>200</option>
+                    <option>250</option>
+                    <option>300</option>
+                    <option>400</option>
+                    <option>500</option>
+                </select>
+                <input placeholder="Description" title="Description" type="text" class="packages__input description">
+                <input placeholder="Lenght" title="Lenght" type="number" class="packages__input dim">
+                <input placeholder="Width" title="Width" type="number" class="packages__input dim">
+                <input placeholder="Height" title="Height" type="number" class="packages__input dim">
+            </fieldset>
+            <h5 class="no-margin packages__order">Commodity 15</h5>
+            <fieldset class="packages__fieldset">
+                <select title="Handling Type" class="packages__input hangling-type">
+                    <option disabled selected>Handling Type</option>
+                    <option>Pallet</option>
+                    <option>Skid</option>
+                    <option>Box</option>
+                    <option>Carton</option>
+                    <option>Barrel</option>
+                </select>
+                <input placeholder="Num of Units" title="Pieces" type="number" class="packages__input number-packages">
+                <select title="Class" class="packages__input nmfc-class">
+                    <option disabled selected>Class</option>
+                    <option>50</option>
+                    <option>55</option>
+                    <option>60</option>
+                    <option>65</option>
+                    <option>70</option>
+                    <option>77.5</option>
+                    <option>85</option>
+                    <option>92.5</option>
+                    <option>100</option>
+                    <option>110</option>
+                    <option>125</option>
+                    <option>150</option>
+                    <option>175</option>
+                    <option>200</option>
+                    <option>250</option>
+                    <option>300</option>
+                    <option>400</option>
+                    <option>500</option>
+                </select>
+                <input placeholder="Description" title="Description" type="text" class="packages__input description">
+                <input placeholder="Lenght" title="Lenght" type="number" class="packages__input dim">
+                <input placeholder="Width" title="Width" type="number" class="packages__input dim">
+                <input placeholder="Height" title="Height" type="number" class="packages__input dim">
             </fieldset>
         </section>
         <section>

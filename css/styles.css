@@ -39,6 +39,9 @@ h3 {
 h4 {
     font-size: 1.6rem;
 }
+h5 {
+    font-size: 1.2rem;
+}
 img {
     max-width: 100%;
 }
@@ -123,7 +126,7 @@ img {
 }
 @media (min-width: 480px) {
     .location{
-        width: min(90%, 64rem);
+        width: 100%;
     }
     .route-information {
         align-items: center;
@@ -185,11 +188,40 @@ img {
     padding: 1rem;
 }
 .packages__fieldset {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     border: none;
 }
 .packages__input {
     border: none;
+    width: 100%;
+}
+.description {
+    grid-column: 1/4;
+}
+.packages__order {
+    padding: 1rem;
+}
+@media (min-width: 768px) {
+    .packages__fieldset{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .hangling-type{
+        width: 20%;
+    }
+    .number-packages{
+        width: 10%;
+    }
+    .nmfc-class{
+        width: 10%;
+    }
+    .description{
+        width: 50%;
+    }
+    .dim{
+        width: 10%;
+    }
 }
