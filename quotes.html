@@ -11,7 +11,9 @@
 <body>
     <header class="header centrar-texto">
         <div class="header__logo">
-            <img src="img/logo.png" alt="Logo Mint Cargo"">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo Mint Cargo">
+            </a>
         </div>
         <nav class="navigation">
             <a class="navigation__elem" href="#">Tracking</a>
@@ -31,7 +33,7 @@
                         <div class="location__input location__input--obligatorio">
                             <label class="location__label">Country</label>
                             <select class="location__campo">
-                                <option disabled selected>--Country--</option>
+                                <option disabled selected>Select</option>
                                 <option>USA</option>
                                 <option>MEX</option>
                                 <option>CA</option>
@@ -79,7 +81,7 @@
                         <div class="location__input location__input--obligatorio">
                             <label class="location__label">Country</label>
                             <select class="location__campo">
-                                <option disabled selected>--Country--</option>
+                                <option disabled selected>Select</option>
                                 <option>USA</option>
                                 <option>MEX</option>
                                 <option>CA</option>
@@ -120,10 +122,46 @@
                     </div>
                 </div>
             </fieldset>
-            
         </section>
-        <section>
-            <h1 class="title">Package Information</h1>
+
+        <h1 class="title">Package Information</h1>
+        <section class="container packages">
+            <fieldset class="packages__fieldset">
+                <select class="packages__input">
+                    <option disabled selected>Select</option>
+                    <option>Pallet</option>
+                    <option>Skid</option>
+                    <option>Box</option>
+                    <option>Carton</option>
+                    <option>Barrel</option>
+                </select>
+                <input type="number" class="packages__input">
+                <select class="packages__input">
+                    <option disabled selected>Select</option>
+                    <option>50</option>
+                    <option>55</option>
+                    <option>60</option>
+                    <option>65</option>
+                    <option>70</option>
+                    <option>77.5</option>
+                    <option>85</option>
+                    <option>92.5</option>
+                    <option>100</option>
+                    <option>110</option>
+                    <option>125</option>
+                    <option>150</option>
+                    <option>175</option>
+                    <option>200</option>
+                    <option>250</option>
+                    <option>300</option>
+                    <option>400</option>
+                    <option>500</option>
+                </select>
+                <input type="text" class="packages__input">
+                <input type="number" class="packages__input">
+                <input type="number" class="packages__input">
+                <input type="number" class="packages__input">
+            </fieldset>
         </section>
         <section>
             <h1 class="title">Accessories</h1>
