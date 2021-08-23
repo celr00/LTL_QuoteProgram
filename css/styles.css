@@ -228,7 +228,7 @@ img {
 
 .accessories {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
     background-color: var(--gris);
     padding: 2rem;
@@ -242,7 +242,34 @@ img {
     font-size: 1.6rem;
 }
 .accessories__checkbox {
-    height:1.6rem;
-    width: 1.6rem;
+    min-height:1.6rem;
+    min-width: 1.6rem;
     margin-right: 1rem;
+} 
+
+@media (min-width: 480px) {
+    .accessories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .accessories__column--other {
+        grid-column: 1/3;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+    .accessories__column--other h3 {
+        grid-column: 1/3;
+    }
+}
+
+@media (min-width: 768px) {
+    .accessories {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .accessories__column--other {
+        grid-column:auto;
+    }
+    .accessories__accessory {
+        grid-column: 1/3;
+    }
 }
