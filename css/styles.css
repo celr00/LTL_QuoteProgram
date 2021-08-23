@@ -225,3 +225,24 @@ img {
         width: 10%;
     }
 }
+
+.accessories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    background-color: var(--gris);
+    padding: 2rem;
+    margin-bottom: 10rem;
+}
+.accessories__accessory {
+    display: flex;
+    align-items: center;
+}
+.accessories__label {
+    font-size: 1.6rem;
+}
+.accessories__checkbox {
+    height:1.6rem;
+    width: 1.6rem;
+    margin-right: 1rem;
+}
