@@ -5,27 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mint Cargo Quote System</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css"> 
+    <link rel="stylesheet" href="build/css/app.css"> 
 </head>
+
 <body>
-    <header class="header centrar-texto">
-        <div class="header__logo">
-            <a href="index.html">
-                <img src="img/logo.png" alt="Logo Mint Cargo">
-            </a>
+    <header class="header">
+        <div class="contenido-header container">
+            <div class="header__logo">
+                <a href="/">
+                    <img src="build/img/logo.png" alt="Logo Mint Cargo">
+                </a>
+            </div>
+            <nav class="navigation">
+                <a class="navigation__elem" href="quotes.html">New Quote</a>
+                <a class="navigation__elem" href="#">Past Quotes</a>
+                <a class="navigation__elem" href="#">Dashboard</a>
+                <a class="navigation__elem" href="#">Profile</a>
+            </nav>
         </div>
-        <nav class="navigation">
-            <a class="navigation__elem" href="#">Tracking</a>
-            <a class="navigation__elem" href="#">Quote</a>
-            <a class="navigation__elem" href="#">Bill Of Lading</a>
-            <a class="navigation__elem" href="#">Profile</a>
-        </nav>
     </header>
+
     <form>
-        <h1 class="title">Route Information</h1>
         <section class="container route-information">
-            
+            <h1 class="title">Route Information</h1>
             <fieldset class="location">
                 <h2 class="location__title">Shipper</h2>
                 <div class="location__display">
@@ -124,8 +126,8 @@
             </fieldset>
         </section>
 
-        <h1 class="title">Package Information</h1>
         <section class="container packages">
+            <h1 class="title">Package Information</h1>
             <h5 class="no-margin packages__order">Commodity 1</h5>
             <fieldset class="packages__fieldset">
                 <select title="Handling Type" class="packages__input hangling-type">
@@ -163,10 +165,10 @@
                 <input placeholder="Width" title="Width" type="number" class="packages__input dim">
                 <input placeholder="Height" title="Height" type="number" class="packages__input dim">
             </fieldset>
-            
         </section>
-        <h1 class="title">Accessories</h1>
+
         <section class=" container accessories">
+            <h1 class="title">Accessories</h1>
             <div class="accessories__column">
                 <h3 class="no-margin">Origin</h3>
                 <div class="accessories__accessory">
