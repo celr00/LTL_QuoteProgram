@@ -1,0 +1,50 @@
+//Logo Image
+.no-webp .inicio {
+    background-image: url(../img/header.jpg);
+}
+.webp .inicio {
+    background-image: url(../img/header.webp);
+}
+.header__logo {
+    padding: 2rem 0;
+    img {
+        max-height: 6rem;
+        max-width: 10rem;
+    }
+}
+
+//Header Structure
+.header {
+    background-color: $gris;
+}
+.contenido-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+//Navigation
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a {
+        color: $mint;
+        margin-right: 2rem;
+        &:last-of-type{
+            margin-right: 0;
+        }
+        &:hover{
+            color: $negro;
+        }
+    }
+    @include tablet {
+        flex-direction: row;
+        
+    }
+}
